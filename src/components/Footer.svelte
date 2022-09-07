@@ -71,10 +71,11 @@
               (800) 123.456.7890 (800) 123.456.7890 +00 99 88 5647
             </li>
             <li>
-              <i class="fa fa-envelope-o" />
-              <a href="mailto:yourname@domain.com">yourname@domain.com</a>
+              <i class="fa fa-github" />
+              <a href="https://github.com/ahhzaky">ahhzaky</a>
             </li>
           </ul>
+
           <!-- .xs-list-with-icon END -->
         </div>
       </div>
@@ -85,7 +86,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="xs-copyright-text">
-            <p>&copy; Copyright 2018 Charity. - All Right's Reserved</p>
+            <p>&copy; Copyright 2021 Charity. - All Right's Reserved</p>
           </div>
         </div>
         <div class="col-md-6">
