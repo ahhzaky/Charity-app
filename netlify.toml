@@ -1,4 +1,11 @@
+[build]
+  functions = "./functions"
+  
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[dev]
+    targetPort = 8080
