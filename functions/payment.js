@@ -1,3 +1,4 @@
+// here folder npm install midtrans-client | untuk backend midtrans
 exports.handler = function (event, context, callback) {
   // set
   const Midtrans = require("midtrans-client");
