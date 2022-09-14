@@ -14,22 +14,22 @@
           </p>
           <ul class="xs-social-list-v2">
             <li>
-              <a href="" class="color-facebook">
+              <a href="https://www.facebook.com/" class="color-facebook">
                 <i class="fa fa-facebook" />
               </a>
             </li>
             <li>
-              <a href="" class="color-twitter">
+              <a href="https://twitter.com/" class="color-twitter">
                 <i class="fa fa-twitter" />
               </a>
             </li>
             <li>
-              <a href="" class="color-dribbble">
+              <a href="https://dribbble.com/" class="color-dribbble">
                 <i class="fa fa-dribbble" />
               </a>
             </li>
             <li>
-              <a href="" class="color-pinterest">
+              <a href="https://id.pinterest.com/" class="color-pinterest">
                 <i class="fa fa-pinterest" />
               </a>
             </li>
@@ -43,16 +43,16 @@
               <a href="/">About employee</a>
             </li>
             <li>
-              <a href="#">How it works</a>
+              <a href="/">How it works</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a href="/">Careers</a>
             </li>
             <li>
-              <a href="#">Press</a>
+              <a href="/">Press</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="/">Blog</a>
             </li>
             <li>
               <a href="/contact">Contact</a>
@@ -93,13 +93,13 @@
           <nav class="xs-footer-menu">
             <ul>
               <li>
-                <a href="#">FAQ</a>
+                <a href="/">FAQ</a>
               </li>
               <li>
-                <a href="#">Help Desk</a>
+                <a href="/contect">Help Desk</a>
               </li>
               <li>
-                <a href="#">Support</a>
+                <a href="/contect">Support</a>
               </li>
             </ul>
           </nav>
@@ -108,7 +108,7 @@
     </div>
   </div>
   <div class="xs-back-to-top-wraper">
-    <a href="#" class="xs-back-to-top">
+    <a href="/" class="xs-back-to-top">
       <i class="fa fa-angle-up" />
     </a>
   </div>

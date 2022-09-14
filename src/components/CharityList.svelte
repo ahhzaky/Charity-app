@@ -1,4 +1,5 @@
 <script>
+  import { fade, slide, fly } from "svelte/transition";
   import { charities, charity } from "../stores/data.js";
   import Modal from "./Modal.svelte";
 
@@ -49,9 +50,14 @@
     <!-- .row end -->
     <div class="row">
       {#each $charities as charity}
-        <div class="col-lg-4 col-md-6">
+        <div
+          class="col-lg-4 col-md-6"
+          in:slide={{ delay: 1000 }}
+          out:fade={{ delay: 1000 }}
+        >
           <!-- modal goes here -->
           <!-- Modal -->
+
           {#if isModalOpen === true}
             <Modal>
               <div
@@ -140,8 +146,14 @@
               <img src={charity.thumbnail} alt="" />
 
               <div class="xs-skill-bar">
-                <div class="xs-skill-track">
-                  <p>
+                <div
+                  class="xs-skill-track"
+                  style="width:{calculateFunded(
+                    charity.pledged,
+                    charity.target
+                  )}%"
+                >
+                  <p in:fly={{ delay: 3500, x: -100 }} style="left: 100%">
                     <span
                       class="number-percentage-count number-percentage"
                       data-value="90"
@@ -155,10 +167,12 @@
             <!-- .xs-item-header END -->
             <div class="xs-item-content">
               <ul class="xs-simple-tag xs-mb-20">
-                <li><a href="">{charity.category}</a></li>
+                <li><a>{charity.category}</a></li>
               </ul>
 
-              <a href="#" class="xs-post-title xs-mb-30">{charity.title}</a>
+              <a href="/donation/{charity.id}" class="xs-post-title xs-mb-30"
+                >{charity.title}</a
+              >
 
               <ul class="xs-list-with-content">
                 <li class="pledged">
@@ -186,7 +200,7 @@
                   <img src={charity.profile_photo} alt="" />
                 </div>
                 <div class="xs-avatar-title">
-                  <a href="#"><span>By</span>{charity.profile_name}</a>
+                  <a><span>By</span>{charity.profile_name}</a>
                 </div>
               </div>
 

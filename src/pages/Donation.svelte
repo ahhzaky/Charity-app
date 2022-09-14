@@ -12,6 +12,7 @@
     agree = false,
     contribute = 0;
 
+  // setiap penggunaan dar $: akan membuat setiap variable dari contribute ini menjadi berubah
   $: if ($charity) {
     contribute = Math.floor((parseInt(amount) / $charity.target) * 100);
   }
