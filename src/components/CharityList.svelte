@@ -1,5 +1,5 @@
 <script>
-  export let charities;
+  import { charities, charity } from "../stores/data.js";
   import Modal from "./Modal.svelte";
 
   let isModalOpen = false;
@@ -48,7 +48,7 @@
     </div>
     <!-- .row end -->
     <div class="row">
-      {#each charities as charity}
+      {#each $charities as charity}
         <div class="col-lg-4 col-md-6">
           <!-- modal goes here -->
           <!-- Modal -->
