@@ -167,6 +167,7 @@
             <!-- .xs-item-header END -->
             <div class="xs-item-content">
               <ul class="xs-simple-tag xs-mb-20">
+                <!-- svelte-ignore a11y-missing-attribute -->
                 <li><a>{charity.category}</a></li>
               </ul>
 
@@ -200,6 +201,7 @@
                   <img src={charity.profile_photo} alt="" />
                 </div>
                 <div class="xs-avatar-title">
+                  <!-- svelte-ignore a11y-missing-attribute -->
                   <a><span>By</span>{charity.profile_name}</a>
                 </div>
               </div>
