@@ -9,7 +9,7 @@ export const mapOptions = {
   disableDefaultUI: true,
 
   // The latitude and longitude to center the map (always required)
-  center: { lat: 40.67, lng: -73.94 }, // New York
+  center: { lat: -6.17511, lng: 106.865036 }, // New York
 
   // How you would like to style the map.
   // This is where you would paste any style found on Snazzy Maps.
