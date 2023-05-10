@@ -4,7 +4,7 @@ export const charities = writable([]);
 export const charity = writable({});
 
 export async function getCharities() {
-  const res = await fetch("http://localhost:8081/charities");
+  const res = await fetch("https://bwacharity.fly.dev/charities");
   const data = await res.json();
   charities.set(data);
 
@@ -16,7 +16,7 @@ export async function getCharities() {
 }
 
 export async function getCharity(id) {
-  const res = await fetch(`http://localhost:8081/charities/${id}`);
+  const res = await fetch(`https://bwacharity.fly.dev/charities/${id}`);
   const data = await res.json();
   charity.set(data);
 

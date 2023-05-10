@@ -28,13 +28,16 @@
     const newData = await getCharity($params.id);
     newData.pledged = newData.pledged + parseInt(amount);
     try {
-      const res = await fetch(`http://localhost:8081/charities/${$params.id}`, {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(newData),
-      });
+      const res = await fetch(
+        `https://bwacharity.fly.dev/charities/${$params.id}`,
+        {
+          method: "PUT",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(newData),
+        }
+      );
       const resMid = await fetch(`/.netlify/functions/payment`, {
         method: "POST",
         headers: {
