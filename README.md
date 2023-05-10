@@ -8,4 +8,4 @@ Projek untuk membangun website menggunakan sveltejs yang mana bertujuan untuk ch
 
 ## <a href="https://charity-byzaky.netlify.app/">LIVE DEMO</a>
 
-Update 2
+Update 3
