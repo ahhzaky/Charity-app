@@ -34,7 +34,7 @@ exports.handler = function (event, context, callback) {
   const parameters = {
     transaction_details: {
       // order id untuk random saja seperti invoice
-      order_id: `BWACHA-${id}-${+new Date()}`,
+      order_id: `CHARITY-${id}-${+new Date()}`,
       gross_amount: parseInt(amount),
     },
     customer_details: {
