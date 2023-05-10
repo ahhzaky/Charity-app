@@ -54,7 +54,8 @@ exports.handler = function (event, context, callback) {
       const { token, redirect_url } = transaction;
       console.log(`Token: ${token}`);
       console.log(`Redirect URL: ${redirect_url}`);
-
+      console.log(`Params: ${JSON.stringify(parameters)}`);
+      console.log(`Transaction: ${JSON.stringify(transaction)}`);
       callback(null, {
         statusCode: 200,
         headers,
